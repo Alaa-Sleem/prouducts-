@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container py-4"> 
+      <label for="Proudctname" >  proudct name :</label>
+      <input type="text" class=" form-control mb-3" id="prouductName">
+
+      <label for="prouductprice" >  proudct price :</label>
+      <input type="text" class=" form-control mb-3" id="prouductPrice">
+
+      <label for="prouductcat" >  proudct category  :</label>
+      <input type="text" class=" form-control mb-3" id="prouductCat">
+
+      <label for="prouduct dis" >  proudct discreption :</label>>
+        <textarea name="prouductdis"class=" form-control mb-3" id="prouductdis" cols="10" rows="1"></textarea>
+
+        <button class="btn btn-info"  onclick="addProuduct()"> add prodact</button>
+
+        <input placeholder="Search Prouct Name"  oninput="searchName(this.value)"  id="searchPr"  class="w-50 mx-auto form-control" >
+        <br>
+
+
+        <table class="table  ">
+
+            <thead class="text-center bg-dark text-white">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+                
+            </thead>
+
+            <tbody id="tBody">
+               
+                
+             
+
+            </tbody>
+
+        </table>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+
+</body>
+</html>
